@@ -152,6 +152,93 @@ body {
   transform: translateY(-8px);
 }
 
+/* About Section */
+.about {
+  min-height: 100vh;
+  padding: 100px 9% 40px;
+  background: var(--second-bg-color);
+  text-align: center;
+}
+
+.heading {
+  font-size: 45px;
+  margin-bottom: 35px;
+}
+
+.heading span {
+  color: var(--main-color);
+}
+
+.about-img {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  background: var(--bg-color);
+}
+
+.circle-spin {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border-top: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.about-content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.about-content h3 {
+  font-size: 26px;
+  color: var(--text-color);
+  margin-bottom: 18px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: var(--gray-color);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.circle-spin {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+  animation: spinRing 5s linear infinite;
+}
+
+@keyframes spinRing {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Responsive */
 @media (max-width: 900px) {
   .header {
     padding: 20px 5%;
@@ -194,4 +281,75 @@ body {
     width: 280px;
     height: 340px;
   }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .about-img {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    margin: 40px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .about-img img {
+    width: 155px;
+    height: 155px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center top;
+    border:4px solid #00abf0;
+    z-index:5;
+    background:#16364d;
+  }
+
+  .circle-spin {
+    position:absolute;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    border-top:3px solid #00abf0;
+    border-right:3px solid transparent;
+    border-bottom:3px solid #00abf0;
+    border-left:3px solid transparent;
+    animation:rotateRing 6s linear infinite;
+  }
+  .circle-spin.second{
+    width:290px;
+    height:290px;
+
+    border-top:3px solid transparent;
+    border-right:3px solid #00abf0;
+    border-bottom:3px solid transparent;
+    border-left:3px solid #00abf0;
+
+    animation:rotateRingReverse 9s linear infinite;
+}
+@keyframes rotateRing{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+@keyframes rotateRingReverse{
+
+    from{
+        transform:rotate(360deg);
+    }
+
+    to{
+        transform:rotate(0deg);
+    }
+
+}
 }
