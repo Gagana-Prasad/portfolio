@@ -448,3 +448,25 @@ body {
   line-height: 1.8;
   color: var(--gray-color);
 }
+.education .btn{
+    margin-top:20px;
+}
+.education-btn{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.activities-button{
+    display:flex;
+    justify-content:flex-start;
+    margin-top:25px;
+    margin-left:5px;
+}
+
+.activities-button .btn{
+    width:200px;
+}
+.education-content .content:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 20px rgba(0,171,240,.3);
+}
