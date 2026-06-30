@@ -869,3 +869,197 @@ width:100%;
     transform:translateY(-5px);
     box-shadow:0 0 15px #00abf0;
 }
+
+
+@media (max-width: 768px) {
+
+  .header {
+    height: auto;
+    padding: 15px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .navbar a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 140px 5% 60px;
+    gap: 35px;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 38px;
+  }
+
+  .home-content h3 {
+    font-size: 22px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .btn-box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-social {
+    justify-content: center;
+  }
+
+  .home-img {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-img img {
+    width: 270px;
+    height: 330px;
+  }
+
+  .about {
+    padding: 100px 5% 60px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .about-content h3 {
+    font-size: 22px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .education {
+    padding: 100px 5% 60px;
+  }
+
+  .education-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .education-column {
+    width: 100%;
+  }
+
+  .education-column .title {
+    font-size: 25px;
+  }
+
+  .education-content .content {
+    padding: 18px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .activities-button {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .skills {
+    padding: 100px 5% 60px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 24px;
+  }
+
+  .contact {
+    padding: 100px 5% 60px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    padding: 28px;
+  }
+
+  .contact-info h3 {
+    font-size: 24px;
+  }
+
+  .info-item {
+    gap: 15px;
+    font-size: 15px;
+  }
+
+  .info-item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content h3 {
+    font-size: 19px;
+  }
+
+  .home-img img {
+    width: 240px;
+    height: 300px;
+  }
+
+  .btn {
+    min-width: 130px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .home-social a {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+}
